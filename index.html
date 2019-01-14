@@ -2013,6 +2013,1960 @@ map.on('load', function () {
             }
         }, 7000);
     }) // *******END*******
+            // *******NEW LINE*******
+        d3.json('satInfo/41860.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace51', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace51",
+            "type": "line",
+            "source": "trace51",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace51').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41859.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace52', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace52",
+            "type": "line",
+            "source": "trace52",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace52').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41554.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace53', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace53",
+            "type": "line",
+            "source": "trace53",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace53').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41550.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace54', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace54",
+            "type": "line",
+            "source": "trace54",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace54').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41549.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace55', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace55",
+            "type": "line",
+            "source": "trace55",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace55').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41469.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace56', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace56",
+            "type": "line",
+            "source": "trace56",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace56').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41434.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace57', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace57",
+            "type": "line",
+            "source": "trace57",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace57').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41384.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace58', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace58",
+            "type": "line",
+            "source": "trace58",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace58').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41330.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace59', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace59",
+            "type": "line",
+            "source": "trace59",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace59').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41315.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace60', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace60",
+            "type": "line",
+            "source": "trace60",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace60').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41241.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace61', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace61",
+            "type": "line",
+            "source": "trace61",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace61').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41175.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace62', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace62",
+            "type": "line",
+            "source": "trace62",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace62').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/41174.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace63', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace63",
+            "type": "line",
+            "source": "trace63",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace63').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40938.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace64', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace64",
+            "type": "line",
+            "source": "trace64",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace64').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40890.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace65', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace65",
+            "type": "line",
+            "source": "trace65",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace65').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40889.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace66', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace66",
+            "type": "line",
+            "source": "trace66",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace66').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40749.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace67', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace67",
+            "type": "line",
+            "source": "trace67",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace67').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40748.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace68', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace68",
+            "type": "line",
+            "source": "trace68",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace68').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40549.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace69', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace69",
+            "type": "line",
+            "source": "trace69",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace69').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40547.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace70', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace70",
+            "type": "line",
+            "source": "trace70",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace70').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40545.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace71', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace71",
+            "type": "line",
+            "source": "trace71",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace71').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40544.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace72', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace72",
+            "type": "line",
+            "source": "trace72",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace72').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40315.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace73', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace73",
+            "type": "line",
+            "source": "trace73",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace73').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40269.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace74', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace74",
+            "type": "line",
+            "source": "trace74",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace74').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40129.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace75', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace75",
+            "type": "line",
+            "source": "trace75",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace75').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40128.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace76', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace76",
+            "type": "line",
+            "source": "trace76",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace76').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/40001.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace77', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace77",
+            "type": "line",
+            "source": "trace77",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace77').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/39635.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace78', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace78",
+            "type": "line",
+            "source": "trace78",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace78').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/39620.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace79', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace79",
+            "type": "line",
+            "source": "trace79",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace79').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+            // *******NEW LINE*******
+        d3.json('satInfo/39199.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace80', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace80",
+            "type": "line",
+            "source": "trace80",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace80').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/39155.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace81', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace81",
+            "type": "line",
+            "source": "trace81",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace81').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/38953.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace82', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace82",
+            "type": "line",
+            "source": "trace82",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace82').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/38858.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace83', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace83",
+            "type": "line",
+            "source": "trace83",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace83').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/38857.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace84', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace84",
+            "type": "line",
+            "source": "trace84",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace84').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/38775.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace85', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace85",
+            "type": "line",
+            "source": "trace85",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace85').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/38774.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace86', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace86",
+            "type": "line",
+            "source": "trace86",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace86').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/38251.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace87', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace87",
+            "type": "line",
+            "source": "trace87",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace87').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/38250.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace88', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace88",
+            "type": "line",
+            "source": "trace88",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace88').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/38091.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace89', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace89",
+            "type": "line",
+            "source": "trace89",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace89').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37948.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace90', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace90",
+            "type": "line",
+            "source": "trace90",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace90').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37938.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace91', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace91",
+            "type": "line",
+            "source": "trace91",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace91').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37869.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace92', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace92",
+            "type": "line",
+            "source": "trace92",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace92').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37868.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace93', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace93",
+            "type": "line",
+            "source": "trace93",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace93').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37867.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace94', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace94",
+            "type": "line",
+            "source": "trace94",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace94').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37847.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace95', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace95",
+            "type": "line",
+            "source": "trace95",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace95').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37846.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace96', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace96",
+            "type": "line",
+            "source": "trace96",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace96').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37829.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace97', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace97",
+            "type": "line",
+            "source": "trace97",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace97').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37763.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace98', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace98",
+            "type": "line",
+            "source": "trace98",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace98').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37384.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace99', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace99",
+            "type": "line",
+            "source": "trace99",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace99').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
+
+                // *******NEW LINE*******
+        d3.json('satInfo/37372.json', function(err, data) {
+        if (err) throw err;
+
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace100', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace100",
+            "type": "line",
+            "source": "trace100",
+            "paint": {
+                "line-color": "red",
+                "line-opacity": 1,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace100').setData(data);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 7000);
+    }) // *******END*******
 
 });
 </script>
